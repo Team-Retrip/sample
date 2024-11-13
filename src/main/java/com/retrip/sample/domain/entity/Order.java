@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.UUID;
 
+import static com.retrip.sample.domain.vo.OrderStatus.*;
 import static com.retrip.sample.domain.vo.OrderStatus.CREATED;
 import static lombok.AccessLevel.PROTECTED;
 
@@ -28,5 +29,9 @@ public class Order {
         this.id = UUID.randomUUID();
         this.name = name;
         this.status = CREATED;
+    }
+
+    public void cancel() {
+        this.status = CANCELED;
     }
 }
