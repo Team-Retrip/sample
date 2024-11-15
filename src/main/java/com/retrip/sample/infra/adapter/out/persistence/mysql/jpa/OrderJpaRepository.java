@@ -1,4 +1,4 @@
-package com.retrip.sample.framework.adapter.out.persistence.mysql;
+package com.retrip.sample.infra.adapter.out.persistence.mysql.jpa;
 
 import com.retrip.sample.application.port.out.repository.OrderRepository;
 import com.retrip.sample.domain.entity.Order;
