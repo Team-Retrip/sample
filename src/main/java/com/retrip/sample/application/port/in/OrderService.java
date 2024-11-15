@@ -42,4 +42,8 @@ public class OrderService
     public List<OrderResponse> getOrdersByStatus(String status) {
         return orderQueryRepository.findAllByStatus(OrderStatus.valueOf(status));
     }
+
+    public void paymentAccountTransfer(UUID orderId) {
+
+    }
 }
