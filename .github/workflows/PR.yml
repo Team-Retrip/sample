@@ -4,15 +4,11 @@ on:
   pull_request:
     branches: [ "develop" ]
     types: [opened, reopened]
-  # pull_request_target:
-  #   types: [opened, reopened]
 
 jobs:
   PR:
     runs-on: ubuntu-latest
     steps:
-      # - name: Check if PR is from the target branch
-        # if: github.event_name == 'pull_request' && github.base_ref == 'develop'
       - uses: Team-Retrip/PR-to-Discord@main
         with:
           discord_webhook_url: ${{ secrets.DISCORD_WEBHOOK_URL }}
