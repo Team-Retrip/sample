@@ -1,6 +1,8 @@
 name: PR to Discord
 
 on:
+  pull_request:
+    branches: [ "develop" ]
   pull_request_target:
     types: [opened, reopened]
 
