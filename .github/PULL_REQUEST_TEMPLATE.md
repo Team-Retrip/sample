@@ -24,7 +24,7 @@
 Resolves: #123  
 Ref: #456  
 Related to: #48, #45
-
+close: #번호
 
 ### **추가 설명 (선택 사항)**
 
